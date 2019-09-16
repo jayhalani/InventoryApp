@@ -43,8 +43,6 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
     private EditText mProviderNameEditText;
     private EditText mProviderNumberEditText;
     private EditText mProviderEmailEditText;
-    private Button mIncreaseQuantityButton;
-    private Button mDecreaseQuantityButton;
     private ImageView mImageView;
 
     String nameString;
@@ -93,8 +91,8 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         mProviderNameEditText = (EditText) findViewById(R.id.providerName_edit);
         mProviderNumberEditText = (EditText) findViewById(R.id.providerNumber_edit);
         mProviderEmailEditText = (EditText) findViewById(R.id.providerEmail_edit);
-        mIncreaseQuantityButton = (Button) findViewById(R.id.quantity_increase);
-        mDecreaseQuantityButton = (Button) findViewById(R.id.quantity_decrease);
+        Button mIncreaseQuantityButton = (Button) findViewById(R.id.quantity_increase);
+        Button mDecreaseQuantityButton = (Button) findViewById(R.id.quantity_decrease);
         mImageView = (ImageView) findViewById(R.id.product_imageView);
 
 
@@ -276,7 +274,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
 
             // Extract out the value from the Cursor for the given column index
             nameString = cursor.getString(nameColumnIndex);
-            Float priceString = cursor.getFloat(priceColumnIndex);
+            float priceString = cursor.getFloat(priceColumnIndex);
             int quantityString = cursor.getInt(quantityColumnIndex);
             String providerNameString = cursor.getString(providerNameColumnIndex);
             String providerNumberString = cursor.getString(providerNumberColumnIndex);

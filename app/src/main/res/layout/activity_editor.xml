@@ -40,7 +40,6 @@
                 <Button
                     android:id="@+id/quantity_decrease"
                     style="@style/quantity_buttons"
-                    android:onClick="onDecrement"
                     android:text="-"/>
 
                 <EditText
@@ -56,7 +55,6 @@
                 <Button
                     android:id="@+id/quantity_increase"
                     style="@style/quantity_buttons"
-                    android:onClick="onIncrement"
                     android:text="+"/>
             </LinearLayout>
 
