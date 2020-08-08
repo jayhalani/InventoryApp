@@ -10,6 +10,9 @@ This project is about combining various ideas and skills I’ve been practicing 
 * Updating information based on user input.
 * Creating intents to other apps using stored information.
 
-## Screenshots
+## Libraries Used
+* [Android Support Library](https://developer.android.com/topic/libraries/support-library/)
+* [Android Design(Deprecated)](https://android-developers.googleblog.com/2015/05/android-design-support-library.html)
 
+## Screenshots
 <img src="./art/screen0.png" width="25%"><img src="./art/screen1.png" width="25%"><img src="./art/screen2.png" width="25%"><img src="./art/screen3.png" width="25%">
